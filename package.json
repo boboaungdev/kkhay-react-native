@@ -1,0 +1,76 @@
+{
+  "name": "@kkhay/react-native",
+  "version": "1.0.0",
+  "description": "Official React Native & Expo crypto payment gateway SDK for K Khay (USDT, USDC, BNB, ETH).",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
+  },
+  "keywords": [
+    "kkhay",
+    "crypto",
+    "checkout",
+    "payment-gateway",
+    "react-native",
+    "expo",
+    "expo-go",
+    "mobile",
+    "ios",
+    "android",
+    "usdt",
+    "usdc",
+    "bnb",
+    "ethereum",
+    "web3"
+  ],
+  "author": "K Khay <support@kkhay.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boboaungdev/kkhay-react-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boboaungdev/kkhay-react-native/issues"
+  },
+  "homepage": "https://kkhay.com",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0",
+    "react-native-svg": ">=13.0.0"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.73.0",
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-svg": "^15.3.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
